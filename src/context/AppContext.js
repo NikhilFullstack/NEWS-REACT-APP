@@ -30,7 +30,6 @@ const fetchBlogPosts = async (pagecountry, tag, everything=false, topHeadline=fa
       url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKeyy}`;
     }
     try {
-      console.log(url);
       const res = await fetch(url);
       const data = await res.json();
       console.log("API Response", data); // Log the entire response object to see what is being returned
