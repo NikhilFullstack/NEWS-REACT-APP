@@ -27,7 +27,7 @@ const fetchBlogPosts = async (pagecountry, tag, everything=false, topHeadline=fa
     else {
       console.log('mainCountry',mainPage);
 
-      url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKeyy}`;
+      url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=3945fb7566fd43a88dc8e6432c7a649d`;
     }
     try {
       const res = await fetch(url);
