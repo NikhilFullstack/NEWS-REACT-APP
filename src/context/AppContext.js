@@ -18,11 +18,11 @@ const fetchBlogPosts = async (pagecountry, tag, everything=false, topHeadline=fa
     console.log("everything-topheadline",everything,topHeadline)
     if(everything) {
       console.log("everything-Appcontext");
-      url = `https://newsapi.org/v2/everything?q=${tag}&apiKey=e7676b3ba640411484b99bb2b0fa6f7b`;
+      url = `https://saurav.tech/NewsAPI/everything/cnn.json`;
     }
     else if(topHeadline) {
       console.log('topHeadline',pagecountry)
-      url = `https://newsapi.org/v2/top-headlines?country=${pagecountry}&apiKey=e7676b3ba640411484b99bb2b0fa6f7b`;
+      url = `https://saurav.tech/NewsAPI/everything/cnn.json`;
     }
     else {
       console.log('mainCountry',mainPage);
