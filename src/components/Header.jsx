@@ -31,11 +31,11 @@ export default function Header() {
       // action={`http://localhost:3000/top-headlines${formdata.mode}/:top`}
       >
         <div className="flex justify-evenly">
-          <div>
-            <h1 className="font-bold text-2xl uppercase text-center">
+          <NavLink to='/'>
+            <h1 className="cursor-pointer font-bold text-2xl uppercase text-center">
               BBC News | Top Headlines
             </h1>
-          </div>
+          </NavLink>
           <NavLink to={`/top-headlines/CA/`}>
             <div>
               <button
