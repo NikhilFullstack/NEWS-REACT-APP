@@ -10,24 +10,24 @@ export default function AppContextProvider({ children }) {
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(null);
   const navigate = useNavigate();
-  const apiKeyy='e7676b3ba640411484b99bb2b0fa6f7b';
+  
   // Fetch Blog Data
 const fetchBlogPosts = async (pagecountry, tag, everything=false, topHeadline=false, mainPage=true) => {
     setLoading(true);
-    let url = `https://newsapi.org/v2/everything?q=${tag}&apiKey=${apiKeyy}`;
+    let url = `https://newsapi.org/v2/everything?q=${tag}&apiKey=e7676b3ba640411484b99bb2b0fa6f7b`;
     console.log("everything-topheadline",everything,topHeadline)
     if(everything) {
       console.log("everything-Appcontext");
-      url = `https://newsapi.org/v2/everything?q=${tag}&apiKey=${apiKeyy}`;
+      url = `https://newsapi.org/v2/everything?q=${tag}&apiKey=e7676b3ba640411484b99bb2b0fa6f7b`;
     }
     else if(topHeadline) {
       console.log('topHeadline',pagecountry)
-      url = `https://newsapi.org/v2/top-headlines?country=${pagecountry}&apiKey=${apiKeyy}`;
+      url = `https://newsapi.org/v2/top-headlines?country=${pagecountry}&apiKey=e7676b3ba640411484b99bb2b0fa6f7b`;
     }
     else {
       console.log('mainCountry',mainPage);
 
-      url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKeyy}`;
+      url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=e7676b3ba640411484b99bb2b0fa6f7b`;
     }
     try {
       const res = await fetch(url);
