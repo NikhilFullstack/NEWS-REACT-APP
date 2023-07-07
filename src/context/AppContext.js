@@ -10,7 +10,7 @@ export default function AppContextProvider({ children }) {
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(null);
   const navigate = useNavigate();
-  const apiKeyy='e7676b3ba640411484b99bb2b0fa6f7b;
+  const apiKeyy='e7676b3ba640411484b99bb2b0fa6f7b';
   // Fetch Blog Data
 const fetchBlogPosts = async (pagecountry, tag, everything=false, topHeadline=false, mainPage=true) => {
     setLoading(true);
