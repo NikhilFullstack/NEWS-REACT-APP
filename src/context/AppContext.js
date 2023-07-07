@@ -27,7 +27,7 @@ const fetchBlogPosts = async (pagecountry, tag, everything=false, topHeadline=fa
     else {
       console.log('mainCountry',mainPage);
 
-      url = `http://api.mediastack.com/v1/sources?access_key=c948dbbdfad592110ff274b588827f62&search=abc`;
+      url = `https://saurav.tech/NewsAPI/top-headlines/category/health/in.json`;
     }
     try {
       const res = await fetch(url);
