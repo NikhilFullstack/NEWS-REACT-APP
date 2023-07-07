@@ -27,7 +27,7 @@ const fetchBlogPosts = async (pagecountry, tag, everything=false, topHeadline=fa
     else {
       console.log('mainCountry',mainPage);
 
-      url = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=e7676b3ba640411484b99bb2b0fa6f7b`;
+      url = `http://api.mediastack.com/v1/sources?access_key=c948dbbdfad592110ff274b588827f62&search=abc`;
     }
     try {
       const res = await fetch(url);
