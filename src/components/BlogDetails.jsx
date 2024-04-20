@@ -6,11 +6,9 @@ const BlogDetails = ({ post }) => {
 
   
   return (
-      <div className="text-gray-600 px-5 py-24 w-[280%] -ml-[4] ">
-        <div className="flex flex-wrap -m-4">
-          <div className="p-4 md:w-1/3">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+      <div className="text-gray-600 p-1 min-h-max">
               <img
+                alt="info"
                 src={post.urlToImage ?? defaultImage}
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
                 loading="lazy"
@@ -71,10 +69,7 @@ const BlogDetails = ({ post }) => {
                   {/* ) )} */}
                 </div>
               </div>
-            </div>
           </div>
-        </div>
-      </div>
   );
 };
 

@@ -32,11 +32,11 @@ export default function Header() {
       >
         <div className="flex justify-evenly">
           <NavLink to='/'>
-            <h1 className="cursor-pointer font-bold text-2xl uppercase text-center">
-              BBC News | Top Headlines
+            <h1 className="cursor-pointer font-bold text-2xl uppercase text-center font-mono">
+            NewsSphere: Your Window to the World
             </h1>
           </NavLink>
-          <NavLink to={`/top-headlines/CA/`}>
+          {/* <NavLink to={`/top-headlines/CA/`}>
             <div>
               <button
                 className=""
@@ -55,11 +55,10 @@ export default function Header() {
                 Canada
               </label>
             </div>
-          </NavLink>
+          </NavLink> */}
 
-          <br />
 
-          <NavLink to={"/top-headlines/FR/"}>
+          {/* <NavLink to={"/top-headlines/FR/"}>
             <div>
               <button
                 className=""
@@ -80,7 +79,6 @@ export default function Header() {
             </div>
           </NavLink>
 
-          <br />
 
           <NavLink to={"/top-headlines/DE/"}>
             <div>
@@ -103,7 +101,6 @@ export default function Header() {
             </div>
           </NavLink>
 
-          <br />
           <NavLink to={"/top-headlines/IN/"}>
             <div>
               <button
@@ -125,7 +122,6 @@ export default function Header() {
             </div>
           </NavLink>
 
-          <br />
           <NavLink to={"/top-headlines/JP/"}>
             {" "}
             <div>
@@ -148,7 +144,6 @@ export default function Header() {
             </div>
           </NavLink>
 
-          <br />
           <NavLink to={"/top-headlines/US/"}>
             <div>
               <button
@@ -168,11 +163,11 @@ export default function Header() {
                 United States Of America
               </label>
             </div>
-          </NavLink>
+          </NavLink> */}
         </div>
       </form>
      
-        <form className="flex justify-evenly flex-wrap w-screen">
+        {/* <form className="flex justify-evenly flex-wrap w-screen">
 
           <div className="capitalize font-bold text-2xl text-amber-700">{location.pathname.split("/").at(-1).replaceAll("-"," ")}</div>
           <div>          <input
@@ -204,7 +199,7 @@ export default function Header() {
           </button></NavLink></div>
 
           
-        </form>
+        </form> */}
     </header>
   );
 }

@@ -25,9 +25,12 @@ export default function Pagination() {
             Next
           </button>
         )}
-        <p className="text-sm font-semibold ml-auto">
-          Page {page} of {totalPages}
-        </p>
+        <div className=" w-screen flex flex-row justify-evenly">
+          <a href="https://github.com/nikhilfullstack/" className="animate-pulse font-serif text-indigo-600">Github</a>
+          <a href="https://linkedin.com/in/nikhilfullstack/" className="animate-pulse font-serif text-indigo-600">LinkedIn</a>
+          <a href="https://portfolio-nikhil-fullstack.vercel.app/ "className="animate-pulse font-serif text-indigo-600">Portfolio</a>
+
+        </div>
       </div>
     </div>
   );
